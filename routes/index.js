@@ -75,7 +75,10 @@ router.get('/selectstar', controllers.goods.selectStar)
 router.get('/deletestar', controllers.goods.deleteStar)
 // 商品搜索
 router.get('/searchgoods', controllers.goods.searchGoods)
-
+// 根据goodsId查找商品
+router.post('/goods/goodsdetail', controllers.goods.goodsdetail)
+// 查找卖家微信
+router.post('/goods/account',controllers.goods.account)
 
 
 /** 
@@ -159,6 +162,7 @@ router.post('/search/clearhistoryAction', controllers.search.index.clearhistoryA
 router.get('/goods/deletegoods', controllers.goods.deleteGoods)
 router.post('/goods/update', controllers.goods.updateGoods)
 router.post('/goods/getKindNumber', controllers.backmanage.getGoodsKindNum)
+
 
 
 /** 

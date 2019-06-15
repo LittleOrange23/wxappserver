@@ -28,6 +28,7 @@ module.exports = async (ctx, next) => {
         goods_price: v.price,
         create_time: moment(Date.now()).format('YYYY-MM-DD HH:mm:ss')
       })
+      console.log('添加成功');
     })
     await mysql('orderinfo').update({
       order_amount: count,
